@@ -13,10 +13,10 @@ const button = document.getElementById("btn");
 const target = document.getElementById("rispostaSpace");
 
 
-console.log(invitati.length)
+
 button.addEventListener("click" , function(){
     //creo una variabile per il testo in uscita
-    let risposta = "devi inserire il nome"
+    let risposta = "devi inserire il nome";
     const nome = document.getElementById("nome").value.trim();
     //mi assicuro che sia stato scritto qualcosa all-interno dell'input 
     if(nome){
@@ -34,6 +34,6 @@ button.addEventListener("click" , function(){
     };
     
     //stampo la risposta
-    target.innerHTML = risposta
+    target.innerHTML = risposta;
 
 });
