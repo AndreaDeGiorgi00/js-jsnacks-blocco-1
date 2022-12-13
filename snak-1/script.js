@@ -12,6 +12,6 @@ for(i=1 ; i <= 10 ; i++){
     sommatoria += val;
 
     if(i === 10){
-        target.innerText = `la somma totale è : ${sommatoria}`
-    }
+        target.innerText = `la somma totale è : ${sommatoria}`;
+    };
 }
