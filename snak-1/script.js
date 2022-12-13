@@ -6,13 +6,12 @@
 let sommatoria = 0;
 const target = document.getElementById("contenitore");
 //eseguo 10 volte un prompt grazie al for
-for(i=1 ; i <= 3 ; i++){
+for(i=1 ; i <= 10 ; i++){
 
     let val = parseInt(prompt("inserisci il numero"));
-    console.log(val)
     sommatoria += val;
 
-    if(i === 3){
+    if(i === 10){
         target.innerText = `la somma totale è : ${sommatoria}`
     }
 }
