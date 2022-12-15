@@ -11,7 +11,7 @@ const invitati = ["luca" , "marco" , "giorgio"];
 
 const button = document.getElementById("btn");
 const target = document.getElementById("rispostaSpace");
-
+let validatore = false;
 
 
 button.addEventListener("click" , function(){
@@ -25,12 +25,14 @@ button.addEventListener("click" , function(){
             //controllo se è contenuto nella stringa degli invitati
             if( nome === invitati[i]){
                 risposta = "sei il benvenuto";
+                validatore = true;
             };
             //quando ho finito la lista preparo il messaggio di uscita
-            if (i === invitati.length - 1  &&  risposta === "devi inserire il nome"){
+            if (i === invitati.length - 1  &&  !validatore){
                 risposta = "mi dispiace ma lei non è in lista";
             };
         };
+        validatore = false;
     };
     
     //stampo la risposta
